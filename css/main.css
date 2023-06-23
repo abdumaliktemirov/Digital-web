@@ -1,0 +1,689 @@
+:root {
+    --gray-1: #333;
+    --red: red;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'TT Hoves' sans-serif;
+    margin-bottom: 1000px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* main all cods */
+.nurtow-title {
+    color: var(--gray-4, #BDBDBD);
+    font-size: 64px;
+    font-family: "TT Hoves";
+    font-weight: 300;
+    line-height: 64px;
+}
+
+/* main all cods */
+
+/* Header seris start */
+
+.header-wrap {
+    display: flex;
+    gap: 330px;
+    padding: 29px 0 31px 0;
+    align-items: center;
+}
+
+.header-items {
+    display: flex;
+    gap: 50px;
+}
+
+.header-link {
+    color: var(--gray-1);
+    font-size: 14px;
+    font-family: "TT Hoves";
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    padding: 4px;
+    transition: 0.4s;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.header-link:hover {
+    border-color: #333;
+}
+
+/* Header seris start */
+
+/* Main seris start */
+.main-wrap {
+    display: flex;
+}
+
+.main-title__trasnporent {
+    color: var(--gray-4, #BDBDBD);
+    font-size: 64px;
+    font-family: "TT Hoves";
+    font-weight: 300;
+    line-height: 64px;
+    margin-top: 350px;
+}
+
+.main-title__bold {
+    color: var(--gray-1, #333);
+    font-size: 64px;
+    font-family: "TT Hoves";
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.main-left__number {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.main-wrap__left {
+    margin-right: 70px;
+}
+
+.line {
+    height: 2px;
+    width: 43px;
+    background-color: #BDBDBD;
+    transform: rotate(319deg);
+}
+
+.main-left__number span {
+    color: var(--gray-4, #BDBDBD);
+    font-size: 24px;
+    font-family: "TT Hoves";
+    line-height: 24px;
+}
+
+.main-icons {
+    display: flex;
+    gap: 22px;
+    margin: 90px 0;
+}
+
+.main-icon__left {
+    width: 17.207px;
+    height: 8px;
+    flex-shrink: 0;
+}
+
+.main-icon__right {
+    width: 17.207px;
+    height: 8px;
+    flex-shrink: 0;
+}
+
+.main-icon__1 {
+    width: 53px;
+    height: 53px;
+    flex-shrink: 0;
+    border: 1px solid #F2F2F2;
+    background: #FFF;
+    text-align: center;
+    line-height: 53px;
+    cursor: pointer;
+}
+
+.main-icon__2 {
+    width: 53px;
+    height: 53px;
+    flex-shrink: 0;
+    border: 1px solid #F2F2F2;
+    background: #F9F9F9;
+    text-align: center;
+    line-height: 53px;
+    cursor: pointer;
+}
+
+.main-icon__2:hover .main-icon__right {
+    transform: translateX(6px);
+}
+
+.main-icon__1:hover .main-icon__left {
+    transform: translateX(-6px);
+}
+
+/* Main seris end */
+
+/* Comanda seris start */
+#comadna {
+    max-width: 100%;
+    height: 435px;
+    flex-shrink: 0;
+    background: var(--1, #FBFBFB);
+    margin-top: 120px;
+}
+
+.comadnda-wrap {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.comanda-wrap__left {
+    display: flex;
+    gap: 30px;
+}
+
+.comanda-imges {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.comanda-img__one {
+    margin-top: 60px;
+}
+
+.comanda-right__info {
+    margin-top: 27px;
+}
+
+.comadnda-info__text {
+    max-width: 380px;
+    height: 200px;
+    color: #000;
+    font-size: 16px;
+    font-family: "TT Hoves";
+    font-weight: 300;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+.comadna-info__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    width: 222px;
+    height: 71px;
+    flex-shrink: 0;
+    background: #FFF;
+    cursor: pointer;
+}
+
+.comadna-info__link a {
+    color: var(--gray-1, #333);
+    font-size: 12px;
+    font-family: "TT Hoves";
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.comadna-info__link img {
+    transition: 0.4s;
+}
+
+.comadna-info__link:hover img {
+    transform: translateX(10px);
+
+}
+
+/* Comanda seris end */
+
+/* Goals seris start */
+#goals {
+    margin-top: 140px;
+}
+
+.goals-wrap__numbers {
+    display: flex;
+    gap: 187px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.goals-wrap__left,
+.goals-wrap__right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.goals-number {
+    max-width: 104px;
+    color: var(--gray-6, #F2F2F2);
+    font-size: 200px;
+    font-family: "SF Pro Display";
+    font-weight: 900;
+}
+
+.goals-text__1 {
+    width: 279px;
+    color: var(--gray-1, #333);
+    font-size: 22px;
+    font-family: TT Hoves;
+    line-height: 36px;
+}
+
+.goals-text__2 {
+    width: 420px;
+    color: var(--gray-1, #333);
+    font-size: 22px;
+    font-family: 'TT Hoves';
+    line-height: 36px;
+}
+
+/* Goals seris end */
+
+/* Project seris start */
+#project {
+    margin-top: 120px;
+}
+
+.project-image__cards {
+    position: relative;
+}
+
+.project-card__top {
+    display: flex;
+    gap: 30px;
+}
+
+.project-image__1 {
+    cursor: pointer;
+    max-width: 570px;
+    height: 255px;
+    background: var(--gray-1, #333);
+    position: relative;
+}
+
+.project-image__2 {
+    cursor: pointer;
+    max-width: 470px;
+    height: 255px;
+    background: var(--gray-1, #333);
+    position: relative;
+}
+
+.project-image__3 {
+    cursor: pointer;
+    max-width: 370px;
+    height: 255px;
+    background: var(--gray-1, #333);
+    position: relative;
+}
+
+.project-image__info {
+    max-width: 570px;
+    height: 255px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    transition: 0.3s;
+}
+
+.project-info__btn {
+    display: flex;
+    padding: 10px 79px;
+    width: fit-content;
+}
+
+.project-image__1:hover .project-image__info {
+    opacity: 0.800000011920929;
+    background: var(--gray-1, #333);
+}
+
+.project-info__title {
+    color: #FFF;
+    font-size: 64px;
+    font-family: 'TT Hoves';
+    font-weight: 700;
+    padding: 0 79px;
+}
+
+.project-ingo__link {
+    color: #FFF;
+    font-size: 12px;
+    font-family: "Gothic A1";
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.project-info__btn:hover img {
+    transform: translateX(10px);
+}
+
+.project-info__btn img {
+    transition: 0.4s;
+}
+
+.project-card__bottom {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-image__1 {
+    cursor: pointer;
+    max-width: 570px;
+    height: 255px;
+    background: var(--gray-1, #333);
+    position: relative;
+}
+
+.project-bottom-1 {
+    max-width: 270px;
+    height: 255px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    transition: 0.3s;
+}
+
+.project-info__btn {
+    display: flex;
+    padding: 10px 79px;
+    width: fit-content;
+}
+
+.project-image__1:hover .project-bottom-1 {
+    opacity: 0.800000011920929;
+    background: var(--gray-1, #333);
+}
+
+.project-bottom__title {
+    color: #FFF;
+    font-size: 44px;
+    font-family: 'TT Hoves';
+    font-weight: 700;
+    padding: 0 79px;
+}
+
+.project-ingo__link {
+    color: #FFF;
+    font-size: 12px;
+    font-family: "Gothic A1";
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.project-info__btn:hover img {
+    transform: translateX(10px);
+}
+
+.project-info__btn img {
+    transition: 0.4s;
+}
+
+.project-bottom-2 {
+    width: 470px;
+    height: 255px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    transition: 0.3s;
+}
+
+.project-image__2:hover .project-bottom-2 {
+    opacity: 0.800000011920929;
+    background: var(--gray-1, #333);
+}
+
+.project-bottom-3 {
+    width: 370px;
+    height: 255px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    transition: 0.3s;
+}
+
+.project-image__3:hover .project-bottom-3 {
+    opacity: 0.800000011920929;
+    background: var(--gray-1, #333);
+}
+
+.project-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 222px;
+    height: 71px;
+    background: var(--gray-1, #333);
+    position: absolute;
+    right: 0;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.project-button img {
+    transition: 0.4s;
+}
+
+.project-button:hover img {
+    transform: translateX(10px);
+}
+
+.project-button a {
+    color: #FFF;
+    font-size: 12px;
+    font-family: TT Hoves;
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.project-button img {
+    padding-left: 15px;
+}
+
+/* Project seris end */
+
+/* Contact US seris start */
+#contact {
+    margin-top: 250px;
+}
+
+.contact-warp__info {
+    display: flex;
+    gap: 30px;
+    margin-top: 22px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input {
+    width: 391px;
+    height: 46px;
+    background: #F3F3F3;
+    border: none;
+    padding-left: 20px;
+}
+
+.form: input {
+    outline: none;
+    border: none;
+}
+
+.contact-form textarea {
+    width: 391px;
+    height: 147px;
+    background: #F3F3F3;
+    border: none;
+    padding: 14px 20px;
+}
+
+.contact-warp__image img {
+    width: 749px;
+    height: 421px;
+}
+
+.contact-button__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 222px;
+    height: 71px;
+    background: var(--gray-1, #333);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.contact-button__btn a {
+    color: #FFF;
+    font-size: 12px;
+    font-family: TT Hoves;
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.contact-button__btn img {
+    transition: 0.4s;
+}
+
+.contact-button__btn:hover img {
+    transform: translateX(10px);
+}
+
+.contact-for {
+    display: flex;
+    gap: 16px;
+}
+
+.contact-wrap__button {
+    margin-top: 22px;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+    border: solid 1px #F3F3F3;
+    display: block;
+    display: grid;
+    place-content: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-button__text {
+    max-width: 400px;
+    color: #333;
+    font-size: 14px;
+    font-family: TT Hoves;
+    letter-spacing: 0.42px;
+}
+
+.checkbox i {
+    opacity: 0;
+}
+
+#terms:checked+.checkbox i {
+    opacity: 1;
+
+}
+
+#terms:checked+.checkbox {
+    background: #f3f3f3;
+}
+
+/* Contact US seris end */
+#footer {
+    max-width: 100%;
+    height: 417px;
+    background: #2C2C2C;
+    margin-top: 120px;
+}
+
+.footer-wrap {
+    display: flex;
+    padding: 60px 0;
+}
+
+/* Footer seris start */
+.footer-them__title {
+    color: #FFF;
+    font-size: 16px;
+    font-family: TT Hoves;
+    font-weight: 700;
+}
+
+.footer-wrap__log {
+    margin-right: 100px;
+}
+
+.footer-info__nav {
+    margin: 25px 150px 0 0;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-link {
+    color: #FFF;
+    font-size: 14px;
+    font-family: "TT Hoves";
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+.footer-contact__map{
+    margin-top: 25px;
+}
+.footer-wrap__contact{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+}
+
+.footer-contact__icon {
+    color: #FFF;
+    font-size: 14px;
+    font-family: "TT Hoves";
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    max-width: 114px;
+}
+.footer-text{
+    display: block;
+    margin-left: 18px;
+}
+
+
+/* Footer seris end */
