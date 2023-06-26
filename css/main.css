@@ -13,6 +13,11 @@
 
 body {
     font-family: 'TT Hoves' sans-serif;
+    margin-bottom: 1000px;
+}
+
+.wrapper {
+    position: relative;
 }
 
 .container {
@@ -20,6 +25,18 @@ body {
     margin: 0 auto;
 }
 
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
 
 /* main all cods */
 .nurtow-title {
@@ -183,6 +200,7 @@ body {
 
 .main-icon__1:hover {
     transform: scale(1.1);
+    background: #F9F9F9;
 }
 
 .main-icon__2:hover {
@@ -282,11 +300,16 @@ body {
     margin-top: 20px;
 }
 
-.goals-wrap__left,
-.goals-wrap__right {
+.goals-wrap__left {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
+}
+
+.goals-wrap__right {
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
 
 .goals-number {
@@ -324,89 +347,46 @@ body {
     margin-bottom: 60px;
 }
 
-.project-image__cards {
-    position: relative;
-}
-
 .project-card__top {
     display: flex;
     gap: 30px;
 }
 
+.project-image__cards {
+    position: relative;
+}
+
 .project-image__1 {
-    cursor: pointer;
-    max-width: 570px;
-    height: 255px;
-    background: var(--gray-1, #333);
     position: relative;
-}
-
-.project-image__2 {
+    overflow: hidden;
     cursor: pointer;
-    max-width: 470px;
-    height: 255px;
-    background: var(--gray-1, #333);
-    position: relative;
-}
-
-.project-image__3 {
-    cursor: pointer;
-    max-width: 370px;
-    height: 255px;
-    background: var(--gray-1, #333);
-    position: relative;
 }
 
 .project-image__info {
-    max-width: 570px;
-    height: 255px;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     position: absolute;
-    top: 0;
-    transition: 0.3s;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    transition: 0.5s;
 }
 
-.project-info__btn {
-    display: flex;
-    padding: 10px 79px;
-    width: fit-content;
+.project-image__1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.project-image__1:hover::before {
+    background-color: rgba(21, 21, 21, 0.5);
 }
 
 .project-image__1:hover .project-image__info {
-    opacity: 0.800000011920929;
-    background: var(--gray-1, #333);
-}
-
-.project-image__1:hover h1 {
-    color: #fff;
-}
-
-.project-info__title {
-    color: #FFF;
-    font-size: 64px;
-    font-family: 'TT Hoves';
-    font-weight: 700;
-    padding: 0 79px;
-}
-
-.project-ingo__link {
-    color: #FFF;
-    font-size: 12px;
-    font-family: "Gothic A1";
-    line-height: 12px;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-}
-
-.project-info__btn:hover img {
-    transform: translateX(10px);
-}
-
-.project-info__btn img {
-    transition: 0.4s;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .project-card__bottom {
@@ -415,46 +395,52 @@ body {
     margin-top: 30px;
 }
 
-.project-image__1 {
-    cursor: pointer;
-    max-width: 570px;
-    height: 255px;
-    background: var(--gray-1, #333);
+.project-image__3 {
     position: relative;
+    overflow: hidden;
 }
 
-.project-bottom-1 {
-    max-width: 270px;
-    height: 255px;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.project-card-info {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    transition: 0.5s;
+}
+
+.project-image__3::before {
+    content: "";
     position: absolute;
     top: 0;
-    transition: 0.3s;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.project-image__3:hover .project-card-info {
+    top: 30%;
+    transform: translate(-50%, -30%);
+}
+
+.project-image__3:hover::before {
+    background-color: rgba(21, 21, 21, 0.5);
+}
+
+.project-info__title,
+.project-bottom__title {
+    color: #FFF;
+    font-size: 64px;
+    font-family: "TT Hoves";
+    font-weight: 700;
+    line-height: 64px;
 }
 
 .project-info__btn {
-    display: flex;
-    padding: 10px 79px;
-    width: fit-content;
+    margin-top: 14px;
 }
 
-.project-image__1:hover .project-bottom-1 {
-    opacity: 0.800000011920929;
-    background: var(--gray-1, #333);
-}
-
-.project-bottom__title {
-    color: #FFF;
-    font-size: 44px;
-    font-family: 'TT Hoves';
-    font-weight: 700;
-    padding: 0 79px;
-}
-
-.project-ingo__link {
+.project-info__btn a {
     color: #FFF;
     font-size: 12px;
     font-family: "Gothic A1";
@@ -463,73 +449,30 @@ body {
     text-transform: uppercase;
 }
 
-.project-info__btn:hover img {
-    transform: translateX(10px);
-}
-
-.project-info__btn img {
-    transition: 0.4s;
-}
-
-.project-bottom-2 {
-    width: 470px;
-    height: 255px;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    transition: 0.3s;
-}
-
-.project-image__2:hover .project-bottom-2 {
-    opacity: 0.800000011920929;
-    background: var(--gray-1, #333);
-}
-
-.project-bottom-3 {
-    width: 370px;
-    height: 255px;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    transition: 0.3s;
-}
-
-.project-image__3:hover .project-bottom-3 {
-    opacity: 0.800000011920929;
-    background: var(--gray-1, #333);
-}
-
 .project-button {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 222px;
     height: 71px;
-    background: var(--gray-1, #333);
+    background: #333;
     position: absolute;
-    right: 0;
     margin-top: 30px;
     cursor: pointer;
-}
-
-.project-button img {
+    right: 0;
     transition: 0.4s;
 }
 
-.project-button:hover img {
-    transform: translateX(10px);
+.project-button:hover {
+    background: #333333;
+    transform: scale(1.1);
 }
 
 .project-button a {
     color: #FFF;
     font-size: 12px;
-    font-family: TT Hoves;
+    font-family: "TT Hoves";
     line-height: 12px;
     letter-spacing: 2.4px;
     text-transform: uppercase;
@@ -564,6 +507,7 @@ body {
     background: #F3F3F3;
     border: none;
     padding-left: 20px;
+    outline: none;
 }
 
 .contact-form textarea {
@@ -572,6 +516,7 @@ body {
     background: #F3F3F3;
     border: none;
     padding: 14px 20px;
+    outline: none;
 }
 
 .contact-warp__image img {
@@ -588,33 +533,32 @@ body {
     background: var(--gray-1, #333);
     margin-top: 30px;
     cursor: pointer;
+    transition: 0.4s;
+
+}
+
+.contact-button__btn:hover {
+    background: #333333;
+    transform: scale(1.1);
 }
 
 .contact-button__btn a {
     color: #FFF;
     font-size: 12px;
-    font-family: TT Hoves;
+    font-family: "TT Hoves";
     line-height: 12px;
     letter-spacing: 2.4px;
     text-transform: uppercase;
     margin-right: 15px;
 }
 
-.contact-button__btn img {
-    transition: 0.4s;
-}
-
-.contact-button__btn:hover img {
-    transform: translateX(10px);
+.contact-wrap__button {
+    margin-top: 22px;
 }
 
 .contact-for {
     display: flex;
     gap: 16px;
-}
-
-.contact-wrap__button {
-    margin-top: 22px;
 }
 
 .checkbox {
@@ -628,14 +572,6 @@ body {
     cursor: pointer;
 }
 
-.contact-button__text {
-    max-width: 400px;
-    color: #333;
-    font-size: 14px;
-    font-family: TT Hoves;
-    letter-spacing: 0.42px;
-}
-
 .checkbox i {
     opacity: 0;
 }
@@ -646,6 +582,14 @@ body {
 
 #terms:checked+.checkbox {
     background: #f3f3f3;
+}
+
+.contact-button__text {
+    max-width: 400px;
+    color: #333;
+    font-size: 14px;
+    font-family: TT Hoves;
+    letter-spacing: 0.42px;
 }
 
 /* Contact US seris end */
@@ -679,7 +623,6 @@ body {
     position: absolute;
     max-width: 210px;
     height: 120px;
-    flex-shrink: 0;
     background: var(--1, #FBFBFB);
     bottom: -44%;
     transition: 0.4s;
@@ -735,7 +678,6 @@ body {
     position: absolute;
     max-width: 210px;
     height: 120px;
-    flex-shrink: 0;
     background: var(--1, #FBFBFB);
     bottom: -44%;
     transition: 0.4s;
@@ -831,6 +773,7 @@ body {
 
 .gallery-icon__1:hover {
     transform: scale(1.1);
+    background: #F9F9F9;
 }
 
 .gallery-icon__2:hover {
@@ -1006,6 +949,10 @@ body {
     height: 501px;
 }
 
+.certificat-wrap__title {
+    margin-bottom: 50px;
+}
+
 .information-wrap__left {
     display: flex;
     flex-direction: column;
@@ -1055,6 +1002,7 @@ body {
     align-items: center;
     transition: 0.4s;
     margin-top: 32px;
+    cursor: pointer;
 }
 
 .information-btn:hover {
@@ -1190,6 +1138,212 @@ body {
     line-height: 22px;
     display: flex;
     justify-content: center;
+    margin-top: 25px;
 }
 
 /* Footer seris end */
+
+
+/* Modal seris start */
+
+#modal-start:checked+.modal-wrap__lable {
+    opacity: 1;
+}
+
+.modal-wrap__lable {
+    opacity: 0;
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-lable__section {
+    border: solid 1px red;
+    width: 469px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    top: 0;
+}
+
+.modal-lable-close {
+    position: absolute;
+    right: 10%;
+    top: 6%;
+}
+
+.modal-warp__header {
+    text-align: center;
+    margin: 26px 0;
+}
+
+.modal-warp__header h1 {
+    color: #333;
+    font-size: 21px;
+    font-family: TT Hoves;
+    font-weight: 700;
+    letter-spacing: 0.84px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.modal-form input {
+    width: 391px;
+    height: 46px;
+    background: #F3F3F3;
+    border: none;
+    padding-left: 20px;
+    outline: none;
+}
+
+.modal-form textarea {
+    width: 391px;
+    height: 147px;
+    background: #F3F3F3;
+    border: none;
+    padding: 14px 20px;
+    outline: none;
+}
+
+.modal-wrap__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-button__btn {
+    width: 391px;
+    height: 42px;
+    flex-shrink: 0;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.modal-button__btn a {
+    color: #FFF;
+    font-size: 12px;
+    font-family: "TT Hoves";
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.modal-button__btn:hover {
+    transform: scale(1.1);
+}
+
+.modal-for {
+    display: flex;
+    gap: 16px;
+    margin: 20px 0 20px 37px;
+}
+
+.checkboxx {
+    width: 24px;
+    height: 24px;
+    border: solid 1px #F3F3F3;
+    display: block;
+    display: grid;
+    place-content: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.checkboxx i {
+    opacity: 0;
+}
+
+#termss:checked+.checkboxx i {
+    opacity: 1;
+}
+
+#termss:checked+.checkboxx {
+    background: #f3f3f3;
+}
+
+.modal-button__text {
+    max-width: 400px;
+    color: #333;
+    font-size: 14px;
+    font-family: TT Hoves;
+    letter-spacing: 0.42px;
+}
+
+/* Modal seris end */
+/* Modal-2 seris srtar */
+.modal-end__info {
+    width: 516px;
+    height: 421px;
+    background: #FFF;
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.modal-end__img {
+    width: 126px;
+    height: 126px;
+    margin: 0 auto;
+}
+
+.modal-end-sps {
+    color: #333;
+    font-size: 24px;
+    font-family: "TT Hoves";
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.72px;
+    margin: 25px 0;
+}
+
+.modal-end__text {
+    width: 426px;
+    margin: 0 auto;
+    color: #4F4F4F;
+    font-size: 14px;
+    font-family: "TT Hoves";
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.42px;
+}
+
+.modal-end__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 391px;
+    height: 42px;
+    color: #FFF;
+    font-size: 12px;
+    font-family: "TT Hoves";
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    background: #333;
+    margin: 40px 60px 24px 60px;
+    transition: 0.4s;
+}
+
+.modal-end__btn:hover {
+    transform: scale(1.1);
+}
+
+/* Modal-2 seris end */

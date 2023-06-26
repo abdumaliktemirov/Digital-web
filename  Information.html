@@ -68,16 +68,18 @@
                         </div>
                         <a class="information-info__bold" href="#!">+7 (701) 77 76 811</a>
                         <a class="information-info__email" href="#!">Galym.sultanov@mail.ru</a>
-                        <a class="information-btn" href="#!">Орабтная связь</a>
+                        <label id="modal-start" class="information-btn" >
+                            <span class="">Орабтная связь</span>
+                        </label>
                     </div>
                     <div class="information-wrap__right">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.3012005432547!2d67.28300158883503!3d37.22264643984036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f352f57e8a37885%3A0xf3ec1133e9b44d1e!2sSULTAN%20TAXI%20TERMIZ!5e1!3m2!1sru!2s!4v1687611067791!5m2!1sru!2s"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <div class="information-map">
-                                <img src="./img/log/infor-map.svg" alt="information-map">
-                            </div>
+                        <div class="information-map">
+                            <img src="./img/log/infor-map.svg" alt="information-map">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -162,6 +164,61 @@
             <span class="footer-end">© 2019 Digital Project. Все права защищены.</span>
         </footer>
         <!-- Footer seris end -->
+        <input type="checkbox" id="modal-start" hidden>
+        <!-- Modal  -->
+        <div class="modal-wrap__lable">
+            <label for="modal-start" class="modal-lable"></label>
+            <div class="modal-lable__section">
+                <div class="modal-lable-close">
+                    <a href="#!">
+                        <img src="./img/log/modla-x.svg" alt="">
+                    </a>
+                </div>
+                <div class="modal-warp__header">
+                    <h1>Задать вопрос</h1>
+                </div>
+                <form class="modal-form">
+                    <label for="username"></label>
+                    <input type="text" id="username" placeholder="Имя">
+    
+                    <label for="number"></label>
+                    <input type="number" id="usenumberrname" placeholder="Номер телефона*">
+    
+                    <label for="email"></label>
+                    <input type="email" id="useremailname" placeholder="E-mail*">
+    
+                    <label for="text-1"></label>
+                    <input type="text-1" id="text-1" placeholder="Интересующий товар/услуга">
+    
+                    <label for="textarea"></label>
+                    <textarea name="texteria" placeholder="Сообщение*" id="textarea" cols="50" rows="10"></textarea>
+                </form>
+                <div class="modal-wrap__button">
+                    <div class="modal-for">
+                        <input type="checkbox" id="termss" hidden>
+                        <label for="termss" class="checkboxx">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+                        <p class="modal-button__text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+                    </div>
+                    <div class="modal-button__btn">
+                        <a class="project-button__link" href="#!">Отправить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+
+        <!-- Modal-2 -->
+        <div class="modal-wrap__end">
+            <div class="modal-end__info">
+                <img class="modal-end__img" src="./img/modal-end.png" alt="modla-end">
+                <h3 class="modal-end-sps">Спасибо !</h3>
+                <p class="modal-end__text">Ваше сообщение отправлено мы свяжемся с вами в ближайшее время</p>
+                <a class="modal-end__btn" href="#!">ВЕРНУТСЯ НАЗАД</a>
+            </div>
+        </div>
+        <!-- Modal-2 -->
 
     </div>
 
