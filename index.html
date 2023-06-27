@@ -29,7 +29,7 @@
                         <img src="./img/log/nurtown-log.svg" alt="">
                         <span></span>
                     </div>
-                    <nav class="header-nav">
+                    <nav class="header-nav header-nav__none">
                         <ul class="header-items">
                             <li class="header-item">
                                 <a class="header-link" href="./index.html">ГЛАВНАЯ</a>
@@ -48,9 +48,47 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="header-bars__menu">
+                        <label for="header-bars">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                        <p style="display: none;">salom</p>
+                    </div>
                 </div>
             </div>
         </header>
+
+        <input class="header-lable__bars" type="checkbox" id="header-bars" hidden>
+
+        <!-- Header burger seris -->
+        <div class="header-burger__seris">
+            <div class="container">
+                <label class="header-bars__x" for="header-bars">
+                    <i class="fa-solid fa-x"></i>
+                </label>
+                <nav class="bars-nav__menu">
+                    <ul class="header-items header-bars__item">
+                        <li class="header-item">
+                            <a class="header-link" href="./index.html">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="header-items">
+                            <a class="header-link" href="./Gallerya.html">ГАЛЕРЕЯ</a>
+                        </li>
+                        <li class="header-items">
+                            <a class="header-link" href="./Projects.html">ПРОЕКТЫ</a>
+                        </li>
+                        <li class="header-items">
+                            <a class="header-link" href="./Certificat.html">СЕРТИФИКАТЫ</a>
+                        </li>
+                        <li class="header-items">
+                            <a class="header-link" href="./ Information.html">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- Header burger seris-->
+
         <!-- Header seris end -->
 
         <!-- Main seris start -->
@@ -334,6 +372,8 @@
             <span class="footer-end">© 2019 Digital Project. Все права защищены.</span>
         </footer>
         <!-- Footer seris end -->
+
+
 
     </div>
 

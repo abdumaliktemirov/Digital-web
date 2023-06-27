@@ -13,7 +13,6 @@
 
 body {
     font-family: 'TT Hoves' sans-serif;
-    margin-bottom: 1000px;
 }
 
 .wrapper {
@@ -77,7 +76,7 @@ input[type=number] {
 
 .header-wrap {
     display: flex;
-    gap: 330px;
+    justify-content: space-between;
     padding: 29px 0 31px 0;
     align-items: center;
 }
@@ -108,9 +107,54 @@ input[type=number] {
     border-color: #333;
 }
 
+.header-nav {
+    margin-right: 100px;
+}
+
 /* Header seris start */
 
+/* Header burger seris */
+.header-lable__bars,
+.header-bars__x {
+    font-size: 20px;
+}
+
+.header-burger__seris {
+    position: absolute;
+    left: -100%;
+    transition: all 0.5s linear;
+    background: #d8d4d4;
+    width: 100%;
+    top: 0;
+    padding: 50px 20px 20px 20px;
+    height: 100%;
+}
+
+.header-lable__bars:checked+.header-burger__seris {
+    left: 0;
+}
+
+.header-bars__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bars__item a {
+    color: #333;
+}
+
+.header-bars__x {
+    position: absolute;
+    right: 3%;
+}
+
+/* Header burger seris */
+
 /* Main seris start */
+.header-bars__menu {
+    display: none;
+}
+
 .main-wrap {
     display: flex;
 }
@@ -1286,6 +1330,10 @@ input[type=number] {
 
 /* Modal seris end */
 /* Modal-2 seris srtar */
+.modal-wrap__end {
+    display: none;
+}
+
 .modal-end__info {
     width: 516px;
     height: 421px;
@@ -1347,3 +1395,22 @@ input[type=number] {
 }
 
 /* Modal-2 seris end */
+
+
+/* @@ Medya @@ */
+@media (max-width:1200px) {
+    .wrapper {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width:1024px) {
+    .header-nav {
+        display: none;
+    }
+
+    .header-bars__menu {
+        display: block;
+    }
+}
