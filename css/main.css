@@ -85,12 +85,17 @@ input[type=number] {
     cursor: pointer;
 }
 
+.header-wrap__log img {
+    width: 90px;
+}
+
 .header-items {
     display: flex;
     gap: 50px;
 }
 
 .header-link {
+    cursor: pointer;
     color: var(--gray-1);
     font-size: 14px;
     font-family: "TT Hoves";
@@ -235,7 +240,6 @@ input[type=number] {
     height: 53px;
     flex-shrink: 0;
     border: 1px solid #F2F2F2;
-    background: #F9F9F9;
     text-align: center;
     line-height: 53px;
     cursor: pointer;
@@ -249,6 +253,7 @@ input[type=number] {
 
 .main-icon__2:hover {
     transform: scale(1.1);
+    background: #F9F9F9;
 }
 
 /* Main seris end */
@@ -403,6 +408,7 @@ input[type=number] {
 .project-image__1 {
     position: relative;
     overflow: hidden;
+    transition: 0.4s;
     cursor: pointer;
 }
 
@@ -426,6 +432,7 @@ input[type=number] {
 
 .project-image__1:hover::before {
     background-color: rgba(21, 21, 21, 0.5);
+    transition: 0.4s;
 }
 
 .project-image__1:hover .project-image__info {
@@ -442,6 +449,8 @@ input[type=number] {
 .project-image__3 {
     position: relative;
     overflow: hidden;
+    transition: 0.5s;
+
 }
 
 .project-card-info {
@@ -460,6 +469,7 @@ input[type=number] {
     width: 100%;
     height: 100%;
     background: transparent;
+    transition: 0.5s;
 }
 
 .project-image__3:hover .project-card-info {
@@ -796,7 +806,6 @@ input[type=number] {
     height: 53px;
     flex-shrink: 0;
     border: 1px solid #F2F2F2;
-    background: #FFF;
     text-align: center;
     line-height: 53px;
     cursor: pointer;
@@ -808,7 +817,6 @@ input[type=number] {
     height: 53px;
     flex-shrink: 0;
     border: 1px solid #F2F2F2;
-    background: #F9F9F9;
     text-align: center;
     line-height: 53px;
     cursor: pointer;
@@ -822,6 +830,7 @@ input[type=number] {
 
 .gallery-icon__2:hover {
     transform: scale(1.1);
+    background: #F9F9F9;
 }
 
 /* gallerya seris end */
@@ -891,7 +900,7 @@ input[type=number] {
     border: solid 1px #fff;
 }
 
-.projects-info__link a {
+.projects-info__link span {
     color: var(--gray-1, #333);
     font-size: 12px;
     font-family: "TT Hoves";
@@ -1158,8 +1167,6 @@ input[type=number] {
 
 .footer-net__icons a img {
     transition: 0.4s;
-    border: solid 1px black;
-    border-radius: 50%;
     width: 30px;
     height: 30px;
     padding: 5px;
@@ -1167,8 +1174,6 @@ input[type=number] {
 
 .footer-net__icons a img:hover {
     transform: scale(1.1);
-    padding: 5px;
-    border: 1px solid rgb(224, 222, 222);
 }
 
 .herf {
@@ -1204,7 +1209,7 @@ input[type=number] {
 }
 
 .modal-lable__section {
-    border: solid 1px red;
+    border: solid 1px rgb(1, 1, 1);
     width: 469px;
     background: #FFF;
     display: flex;
@@ -1277,7 +1282,7 @@ input[type=number] {
     cursor: pointer;
 }
 
-.modal-button__btn a {
+.modal-button__btn label {
     color: #FFF;
     font-size: 12px;
     font-family: "TT Hoves";
@@ -1329,16 +1334,21 @@ input[type=number] {
 }
 
 /* Modal seris end */
+
 /* Modal-2 seris srtar */
 .modal-wrap__end {
-    display: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
 }
 
 .modal-end__info {
     width: 516px;
     height: 421px;
     background: #FFF;
-    border: solid 1px red;
+    border: solid 1px rgb(3, 3, 3);
     display: flex;
     flex-direction: column;
     text-align: center;

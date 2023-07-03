@@ -26,7 +26,9 @@
             <div class="container">
                 <div class="header-wrap">
                     <div class="header-wrap__log">
-                        <img src="./img/log/nurtown-log.svg" alt="">
+                        <a href="./index.html">
+                            <img src="./img/log/nurtown-log.svg" alt="">
+                        </a>
                         <span></span>
                     </div>
                     <nav class="header-nav header-nav__none">
@@ -106,7 +108,7 @@
                         </div>
                         <a class="information-info__bold" href="#!">+7 (701) 77 76 811</a>
                         <a class="information-info__email" href="#!">Galym.sultanov@mail.ru</a>
-                        <label id="modal-start" class="information-btn" >
+                        <label for="modal-start" class="information-btn" >
                             <span class="">Орабтная связь</span>
                         </label>
                     </div>
@@ -202,15 +204,17 @@
             <span class="footer-end">© 2019 Digital Project. Все права защищены.</span>
         </footer>
         <!-- Footer seris end -->
+
         <input type="checkbox" id="modal-start" hidden>
+
         <!-- Modal  -->
         <div class="modal-wrap__lable">
             <label for="modal-start" class="modal-lable"></label>
             <div class="modal-lable__section">
                 <div class="modal-lable-close">
-                    <a href="#!">
+                    <label for="modal-start">
                         <img src="./img/log/modla-x.svg" alt="">
-                    </a>
+                    </label>
                 </div>
                 <div class="modal-warp__header">
                     <h1>Задать вопрос</h1>
@@ -240,15 +244,22 @@
                         <p class="modal-button__text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
                     </div>
                     <div class="modal-button__btn">
-                        <a class="project-button__link" href="#!">Отправить</a>
+                        <label for="modal-lable-close" class="project-button__link">Отправить</label>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Modal -->
 
+        <input type="checkbox" id="modal-lable-close" hidden>
+
         <!-- Modal-2 -->
         <div class="modal-wrap__end">
+            <div class="modal-lable-close">
+                <label for="modal-start">
+                    <img src="./img/log/modla-x.svg" alt="">
+                </label>
+            </div>
             <div class="modal-end__info">
                 <img class="modal-end__img" src="./img/modal-end.png" alt="modla-end">
                 <h3 class="modal-end-sps">Спасибо !</h3>
@@ -260,7 +271,8 @@
 
     </div>
 
-
+    <!-- JS -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
