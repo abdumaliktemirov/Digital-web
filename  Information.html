@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="./fonts/tt-hoves/stylesheet.css">
     <link rel="stylesheet" href="./fonts/SF Pro Display/stylesheet.css">
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <title>Digital</title>
@@ -21,8 +19,8 @@
 
     <div class="wrapper">
 
-         <!-- Header seris start -->
-         <header id="header">
+        <!-- Header seris start -->
+        <header id="header">
             <div class="container">
                 <div class="header-wrap">
                     <div class="header-wrap__log">
@@ -46,7 +44,7 @@
                                 <a class="header-link" href="./Certificat.html">СЕРТИФИКАТЫ</a>
                             </li>
                             <li class="header-items">
-                                <a class="header-link" href="./ Information.html">КОНТАКТЫ</a>
+                                <a class="header-link active" href="./ Information.html">КОНТАКТЫ</a>
                             </li>
                         </ul>
                     </nav>
@@ -59,8 +57,6 @@
                 </div>
             </div>
         </header>
-
-        <input class="header-lable__bars" type="checkbox" id="header-bars" hidden>
 
         <!-- Header burger seris -->
         <div class="header-burger__seris">
@@ -108,8 +104,8 @@
                         </div>
                         <a class="information-info__bold" href="#!">+7 (701) 77 76 811</a>
                         <a class="information-info__email" href="#!">Galym.sultanov@mail.ru</a>
-                        <label for="modal-start" class="information-btn" >
-                            <span class="">Орабтная связь</span>
+                        <label for="modal-1" class="information-btn">
+                            <span>Орабтная связь</span>
                         </label>
                     </div>
                     <div class="information-wrap__right">
@@ -125,6 +121,68 @@
             </div>
         </section>
         <!-- Information seris end -->
+
+        <input type="checkbox" id="modal-1" hidden>
+        <!-- Modal-1 -->
+        <div class="modal modal-1">
+            <label for="modal-1" class="modal-bg"> </label>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-warp__header">
+                        <h1>Задать вопрос</h1>
+                        <label class="modal-close" for="modal-1">
+                            <img src="./img/log/modla-x.svg" alt="">
+                        </label>
+                    </div>
+                    <form class="modal-form">
+                        <label for="username"></label>
+                        <input type="text" id="username" placeholder="Имя">
+
+                        <label for="number"></label>
+                        <input type="number" id="usenumberrname" placeholder="Номер телефона*">
+
+                        <label for="email"></label>
+                        <input type="email" id="useremailname" placeholder="E-mail*">
+
+                        <label for="text-1"></label>
+                        <input type="text-1" id="text-1" placeholder="Интересующий товар/услуга">
+
+                        <label for="textarea"></label>
+                        <textarea name="texteria" placeholder="Сообщение*" id="textarea" cols="50" rows="10"></textarea>
+                    </form>
+                    <div class="modal-wrap__button">
+                        <div class="modal-for">
+                            <input type="checkbox" id="termss" hidden>
+                            <label class="terms-chekbox" for="termss">
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                            <p class="modal-button__text">Отправляя заявку Вы соглашаетесь с политикой
+                                конфиденциальности</p>
+                        </div>
+                        <div class="modal-button__btn">
+                            <label for="modal-2" class="modal-btn">Отправить</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal-1 -->
+
+        <input type="checkbox" id="modal-2" hidden>
+        <!-- Modal-2 -->
+        <div class="modall  modal-2">
+            <label for="modal-2" class="modal-lable-close"></label>
+            <div class="modal-content-2">
+                <label for="modal-2" class="modal-header">
+                    <img src="./img/log/modla-x.svg" alt="">
+                </label>
+                <img class="modal-end__img" src="./img/modal-end.png" alt="modla-end">
+                <h3 class="modal-end-sps">Спасибо !</h3>
+                <p class="modal-end__text">Ваше сообщение отправлено мы свяжемся с вами в ближайшее время</p>
+                <label for="modal-2" class="modal-end__btn">ВЕРНУТСЯ НАЗАД</label>
+            </div>
+        </div>
+        <!-- Modal-2 -->
 
         <!-- Footer seris start -->
         <footer id="footer">
@@ -205,69 +263,14 @@
         </footer>
         <!-- Footer seris end -->
 
-        <input type="checkbox" id="modal-start" hidden>
 
-        <!-- Modal  -->
-        <div class="modal-wrap__lable">
-            <label for="modal-start" class="modal-lable"></label>
-            <div class="modal-lable__section">
-                <div class="modal-lable-close">
-                    <label for="modal-start">
-                        <img src="./img/log/modla-x.svg" alt="">
-                    </label>
-                </div>
-                <div class="modal-warp__header">
-                    <h1>Задать вопрос</h1>
-                </div>
-                <form class="modal-form">
-                    <label for="username"></label>
-                    <input type="text" id="username" placeholder="Имя">
-    
-                    <label for="number"></label>
-                    <input type="number" id="usenumberrname" placeholder="Номер телефона*">
-    
-                    <label for="email"></label>
-                    <input type="email" id="useremailname" placeholder="E-mail*">
-    
-                    <label for="text-1"></label>
-                    <input type="text-1" id="text-1" placeholder="Интересующий товар/услуга">
-    
-                    <label for="textarea"></label>
-                    <textarea name="texteria" placeholder="Сообщение*" id="textarea" cols="50" rows="10"></textarea>
-                </form>
-                <div class="modal-wrap__button">
-                    <div class="modal-for">
-                        <input type="checkbox" id="termss" hidden>
-                        <label for="termss" class="checkboxx">
-                            <i class="fa-solid fa-check"></i>
-                        </label>
-                        <p class="modal-button__text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
-                    </div>
-                    <div class="modal-button__btn">
-                        <label for="modal-lable-close" class="project-button__link">Отправить</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal -->
+        <!-- <input type="checkbox" id="modal-lable-close" hidden> -->
 
-        <input type="checkbox" id="modal-lable-close" hidden>
 
-        <!-- Modal-2 -->
-        <div class="modal-wrap__end">
-            <div class="modal-lable-close">
-                <label for="modal-start">
-                    <img src="./img/log/modla-x.svg" alt="">
-                </label>
-            </div>
-            <div class="modal-end__info">
-                <img class="modal-end__img" src="./img/modal-end.png" alt="modla-end">
-                <h3 class="modal-end-sps">Спасибо !</h3>
-                <p class="modal-end__text">Ваше сообщение отправлено мы свяжемся с вами в ближайшее время</p>
-                <a class="modal-end__btn" href="#!">ВЕРНУТСЯ НАЗАД</a>
-            </div>
-        </div>
-        <!-- Modal-2 -->
+
+
+
+
 
     </div>
 
